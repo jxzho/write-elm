@@ -4,12 +4,12 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 
 
-view : a -> Html msg
+view : String -> Html msg
 view model =
     div [ class "container" ]
         [ h1 [] [ text "Welcome" ]
         , p []
-            [ text "Hi !"
+            [ text ("Hi !" ++ model)
             , strong [] [ text "DMI" ]
             , text <|
                 """ 
